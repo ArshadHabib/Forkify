@@ -92,6 +92,12 @@ const controlAddRecipe = async function (newRecipe) {
     //dispplay success message
     addRecipeView.renderMessage();
 
+    //render bookmark view
+    bookmarksView.render(model.state.bookmarks);
+
+    //change id in url
+    window.history.pushState(null, '', `#${model.state.recipe.id}`);
+
     //close form window
     setTimeout(function () {
       addRecipeView.toggleWindow();
@@ -113,6 +119,6 @@ const init = function () {
 
 init();
 
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
