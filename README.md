@@ -14,7 +14,7 @@ This is a recipe website that provides users with the ability to search for reci
 
 ## Demo
 
-Will be available soon.
+Check out the live demo of the project at [https://forkify-v2-arshad.netlify.app](https://forkify-v2-arshad.netlify.app).
 
 ## Screenshots
 
